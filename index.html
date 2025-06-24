@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeMarket - Business Plan Presentation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="presentation-container">
+        <!-- Header with navigation -->
+        <header class="presentation-header">
+            <div class="logo-area">
+                <h1 class="logo">VibeMarket</h1>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <span class="slide-counter" id="slideCounter">1 / 20</span>
+            </div>
+            <div class="nav-controls">
+                <button class="nav-btn" id="prevBtn">❮</button>
+                <button class="nav-btn" id="nextBtn">❯</button>
+                <button class="fullscreen-btn" id="fullscreenBtn">⛶</button>
+            </div>
+        </header>
+
+        <!-- Slides Container -->
+        <main class="slides-container" id="slidesContainer">
+            <!-- Slide 1: Portada -->
+            <div class="slide active" data-slide="1">
+                <div class="slide-content hero-slide">
+                    <div class="hero-logo">
+                        <h1 class="hero-title">VibeMarket</h1>
+                        <div class="hero-subtitle">Business Plan</div>
+                    </div>
+                    <p class="hero-tagline">Plataforma de Marketing Digital Automatizada con IA para PYMEs y Autónomos</p>
+                    <div class="hero-date">Presentación Inversores 2025</div>
+                </div>
+            </div>
+
+            <!-- Slide 2: Resumen Ejecutivo -->
+            <div class="slide" data-slide="2">
+                <div class="slide-content">
+                    <div class="slide-logo">
+                        <div class="logo-small">VM</div>
+                    </div>
+                    <h2 class="slide-title">Resumen Ejecutivo</h2>
+                    <div class="content-grid">
+                        <div class="key-point hover-lift">
+                            <h3>🎯 Misión</h3>
+                            <p>Democratizar el marketing digital automatizado para PYMEs y autónomos españoles</p>
+                        </div>
+                        <div class="key-point hover-lift">
+                            <h3>💡 Solución</h3>
+                            <p>Plataforma SaaS con IA que automatiza campañas de marketing end-to-end</p>
+                        </div>
+                        <div class="key-point hover-lift">
+                            <h3>📊 Mercado</h3>
+                            <p>3.38M autónomos + 99% PYMEs del tejido empresarial español</p>
+                        </div>
+                        <div class="key-point hover-lift">
+                            <h3>💰 Proyección</h3>
+                            <p>€6.4M ARR en 5 años con 10,000 usuarios de pago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3: Problema del Mercado -->
+            <div class="slide" data-slide="3">
+                <div class="slide-content">
+                    <div class="slide-logo">
+                        <div class="logo-small">VM</div>
+                    </div>
+                    <h2 class="slide-title">Problema del Mercado</h2>
+                    <div class="problem-points">
+                        <div class="problem-item hover-glow">
+                            <div class="problem-icon">⚠️</div>
+                            <div class="problem-text">
+                                <h3>Solo 30% de autónomos digitalizados</h3>
+                                <p>La mayoría carece de presencia digital efectiva y estrategia coherente</p>
+                            </div>
+                        </div>
+                        <div class="problem-item hover-glow">
+                            <div class="problem-icon">💸</div>
+                            <div class="problem-text">
+                                <h3>Marketing costoso e ineficiente</h3>
+                                <p>Agencias caras (€2K-5K/mes), herramientas dispersas, falta de expertise interno</p>
+                            </div>
+                        </div>
+                        <div class="problem-item hover-glow">
+                            <div class="problem-icon">⏰</div>
+                            <div class="problem-text">
+                                <h3>Falta de tiempo y conocimiento</h3>
+                                <p>Los autónomos no pueden dedicar tiempo a marketing complejo ni tienen formación</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4: Oportunidad de Mercado -->
+            <div class="slide" data-slide="4">
+                <div class="slide-content">
+                    <div class="slide-logo">
+                        <div class="logo-small">VM</div>
+                    </div>
+                    <h2 class="slide-title">Oportunidad de Mercado</h2>
+                    <div class="market-stats">
+                        <div class="stat-large hover-pulse">
+                            <div class="stat-number">3.38M</div>
+                            <div class="stat-label">Autónomos en España</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="stat hover-scale">
+                                <div class="stat-number">99%</div>
+                                <div class="stat-label">PYMEs del tejido empresarial</div>
+                            </div>
+                            <div class="stat hover-scale">
+                                <div class="stat-number">€8.16B</div>
+                                <div class="stat-label">Mercado SaaS España 2024</div>
+                            </div>
+                            <div class="stat hover-scale">
+                                <div class="stat-number">19%</div>
+                                <div class="stat-label">CAGR hasta 2029</div>
+                            </div>
+                        </div>
+                        <div class="market-opportunity hover-lift">
+                            <h3>Gap de Digitalización Masivo</h3>
+                            <p>Solo 30% digitalizados + mercado SaaS en crecimiento = <strong>oportunidad de €1.9B en inversión VC España 2025</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 5: Nuestra Solución -->
+            <div class="slide" data-slide="5">
+                <div class="slide-content">
+                    <div class="slide-logo">
+                        <div class="logo-small">VM</div>
+                    </div>
+                    <h2 class="slide-title">Solución VibeMarket</h2>
+                    <div class="solution-container">
+                        <div class="solution-main hover-glow">
+                            <h3>Plataforma Todo-en-Uno con IA Especializada</h3>
+                            <p>Automatización completa del marketing digital desde estrategia hasta ejecución</p>
+                        </div>
+                        <div class="features-grid">
+                            <div class="feature hover-lift">
+                                <div class="feature-icon">🤖</div>
+                                <h4>Asistente Virtual "Vimo"</h4>
+                                <p>VIbe Marketing Officer con IA conversacional especializada en español</p>
+                            </div>
+                            <div class="feature hover-lift">
+                                <div class="feature-icon">📱</div>
+                                <h4>Aprobación WhatsApp</h4>
+                                <p>Gestión simple desde el móvil, sin complicaciones técnicas</p>
+                            </div>
+                            <div class="feature hover-lift">
+                                <div class="feature-icon">🎯</div>
+                                <h4>Automatización End-to-End</h4>
+                                <p>Desde análisis de mercado hasta campañas ejecutadas</p>
+                            </div>
+                            <div class="feature hover-lift">
+                                <div class="feature-icon">🇪🇸</div>
+                                <h4>IA Especializada España</h4>
+                                <p>Adaptada al mercado, cultura y normativas locales</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 6: Competencia y Diferenciación -->
+            <div class="slide" data-slide="6">
+                <div class="slide-content">
+                    <div class="slide-logo">
+                        <div class="logo-small">VM</div>
+                    </div>
+                    <h2 class="slide-title">Competencia y Diferenciación</h2>
+                    <div class="competition-section">
+                        <div class="competitors hover-lift">
+                            <h3>Competidores Actuales</h3>
+                            <div class="competitor-table">
+                                <div class="competitor-row">
+                                    <span class="competitor-name">HubSpot</span>
+                                    <span class="competitor-price">€800+/mes</span>
+                                    <span class="competitor-issue">Complejo, caro, no local</span>
+                                </div>
+                                <div class="competitor-row">
+                                    <span class="competitor-name">Mailchimp</span>
+                                    <span class="competitor-price">€300/mes</span>
+                                    <span class="competitor-issue">Solo email, limitado</span>
+                                </div>
+                                <div class="competitor-row">
+                                    <span class="competitor-name">ActiveCampaign</span>
+                                    <span class="competitor-price">€500/mes</span>
+                                    <span class="competitor-issue">No automatización total</span>
+                                </div>
+                                <div class="competitor-row">
+                                    <span class="competitor-name">Agencias</span>
+                                    <span class="competitor-price">€2K-5K/mes</span>
+                                    <span class="competitor-issue">Costosas, lentas, no escalables</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="differentiators hover-lift">
+                            <h3>Ventajas Competitivas</h3>
+                            <div class="diff-list">
+                                <div class="diff-item hover-glow">✅ Automatización End-to-End completa</div>
+                                <div class="diff-item hover-glow">✅ IA especializada para mercado español</div>
+                                <div class="diff-item hover-glow">✅ Meta-marketing como demostración</div>
+                                <div class="diff-item hover-glow">✅ Asistente virtual Vimo personalizado</div>
+                                <div class="diff-item hover-glow">✅ Aprobaciones vía WhatsApp Business</div>
+                                <div class="diff-item hover-glow">✅ Precio disruptivo (€29 vs €800+)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 7: Tecnología y Stack -->
+            <div class="slide" data-slide="7">
+                <div class="slide-content">
+                    <div class="slide-logo">
+                        <div class="logo-small">VM</div>
+                    </div>
+                    <h2 class="slide-title">Tecnología y Stack</h2>
+                    <div class="tech-section">
+                        <div class="tech-stack hover-lift">
+                            <h3>Arquitectura Técnica</h3>
+                            <div class="tech-grid">
+                                <div class="tech-item hover-glow">
+                                    <strong>Frontend:</strong> Bolt.new (React-based)<br>
+                                    <small>Desarrollo rápido y UI moderna</small>
+                                </div>
+                                <div class="tech-item hover-glow">
+                                    <strong>Backend:</strong> Supabase<br>
+                                    <small>Base de datos PostgreSQL y autenticación</small>
+                                </div>
+                                <div class="tech-item hover-glow">
+                                    <strong>Automatización:</strong> n8n<br>
+                                    <small>Workflows e integración APIs</small>
+                                </div>
+                                <div class="tech-item hover-glow">
+                                    <strong>IA:</strong> OpenAI/Claude APIs<br>
+                                    <small>Generación contenido y análisis</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-features hover-lift">
+                            <h3>Características del Producto</h3>
+                            <ul class="feature-list">
+                                <li class="hover-highlight">Dashboard intuitivo con métricas en tiempo real</li>
+                                <li class="hover-highlight">Automatización de campañas multi-canal</li>
+                                <li class="hover-highlight">Generación de contenido con IA localizada</li>
+                                <li class="hover-highlight">Integración con redes sociales y email</li>
+                                <li class="hover-highlight">Análisis predictivo y recomendaciones</li>
+                                <li class="hover-highlight">Gestión de leads automatizada</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 8: Estrategia Pre-Lanzamiento -->
+            <div class="slide" data-slide="8">
+                <div class="slide-content">
+                    <div class="slide-logo">
+                        <div class="logo-small">VM</div>
+                    </div>
+                    <h2 class="slide-title">Estrategia Pre-Lanzamiento</h2>
+                    <div class="marketing-strategy">
+                        <div class="strategy-item hover-lift">
+                            <h3>🎯 Meta-Marketing</h3>
+                            <p><strong>Septiembre-Octubre 2025:</strong> Demostrar eficacia usando nuestra propia plataforma para generar primeros 100 leads cualificados</p>
+                        </div>
+                        <div class="strategy-item hover-lift">
+                            <h3>📱 Content Marketing</h3>
+                            <p><strong>Octubre-Noviembre:</strong> Blog especializado, webinars semanales, casos de estudio reales para autónomos</p>
+                        </div>
+                        <div class="strategy-item hover-lift">
+                            <h3>🤝 Partnerships Estratégicos</h3>
+                            <p><strong>Todo Q4 2025:</strong> Colaboraciones con ATA, cámaras de comercio, asesores fiscales</p>
+                        </div>
+                        <div class="strategy-item hover-lift">
+                            <h3>🎁 Programa Beta</h3>
+                            <p><strong>Noviembre-Diciembre:</strong> 100 early adopters con acceso gratuito 3 meses + feedback intensivo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 9: Modelo de Negocio -->
+            <div class="slide" data-slide="9">
+                <div class="slide-content">
+                    <div class="slide-logo">
+                        <div class="logo-small">VM</div>
+                    </div>
+                    <h2 class="slide-title">Modelo de Negocio</h2>
+                    <div class="pricing-section">
+                        <div class="pricing-tiers">
+                            <div class="tier hover-lift">
+                                <div class="tier-header">
+                                    <h3>Starter</h3>
+                                    <div class="price">€0</div>
+                                    <p class="tier-description">Perfecto para empezar</p>
+                                </div>
+                                <div class="tier-features">
+                                    <ul>
+                                        <li>Hasta 30 posts automáticos/mes</li>
+                                        <li>2 redes sociales conectadas</li>
+                                        <li>Generación de contenido IA básica</li>
+                                        <li>Analytics básicos</li>
+                                        <li>Soporte por email</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tier featured hover-lift">
+                                <div class="popular-badge">MÁS POPULAR</div>
+                                <div class="tier-header">
+                                    <h3>Professional</h3>
+                                    <div class="price">€29<span>/mes</span></div>
+                                    <p class="tier-description">Para negocios en crecimiento</p>
+                                </div>
+                                <div class="tier-features">
+                                    <ul>
+                                        <li>Hasta 100 posts automáticos/mes</li>
+                                        <li>5 redes sociales conectadas</li>
+                                        <li>IA avanzada + personalización marca</li>
+                                        <li>Analytics avanzados + insights IA</li>
+                                        <li>Campañas automatizadas</li>
+                                        <li>Soporte prioritario</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tier hover-lift">
+                                <div class="tier-header">
+                                    <h3>Enterprise</h3>
+                                    <div class="price">€79<span>/mes</span></div>
+                                    <p class="tier-description">Para equipos y agencias</p>
+                                </div>
+                                <div class="tier-features">
+                                    <ul>
+                                        <li>Posts ilimitados</li>
+                                        <li>Redes sociales ilimitadas</li>
+                                        <li>IA enterprise + marca completa</li>
+                                        <li>Analytics enterprise + reporting</li>
+                                        <li>Múltiples marcas/clientes</li>
+                                        <li>Soporte dedicado + onboarding</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 10: Métricas SaaS Clave -->
+            <div class="slide" data-slide="10">
+                <div class="slide-content">
+                    <div class="slide-logo">
+                        <div class="logo-small">VM</div>
+                    </div>
+                    <h2 class="slide-title">Métricas SaaS Clave</h2>
+                    <div class="metrics-grid">
+                        <div class="metric-card hover-lift">
+                            <div class="metric-value">€254</div>
+                            <div class="metric-label">CAC (Customer Acquisition Cost)</div>
+                            <div class="metric-description">Promedio industria SaaS B2B España</div>
+                        </div>
+                        <div class="metric-card hover-lift">
+                            <div class="metric-value">€8K</div>
+                            <div class="metric-label">LTV (Customer Lifetime Value)</div>
+                            <div class="metric-description">Basado en churn 8% año 1, 4% año 5</div>
+                        </div>
+                        <div class="metric-card hover-lift">
+                            <div class="metric-value">35x</div>
+                            <div class="metric-label">LTV/CAC Ratio</div>
+                            <div class="metric-description">Objetivo: >3x (excelente: >5x)</div>
+                        </div>
+                        <div class="metric-card hover-lift">
+                            <div class="metric-value">Mes 6</div>
+                            <div class="metric-label">Payback Period</div>
+                            <div class="metric-description">Recuperación inversión marketing</div>
+                        </div>
+                    </div>
+                    <div class="metrics-explanation hover-glow">
+                        <h3>¿Por qué estas métricas son clave?</h3>
+                        <p>Un LTV/CAC ratio de 35x indica un modelo de negocio extremadamente rentable y escalable, muy por encima de los estándares de la industria.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 11: Proyecciones Financieras -->
+            <div class="slide" data-slide="11">
+                <div class="slide-content">
+                    <div class="slide-logo">
+                        <div class="logo-small">VM</div>
+                    </div>
+                    <h2 class="slide-title">Proyecciones Financieras</h2>
+                    <div class="financial-projections">
+                        <div class="projection-main">
+                            <div class="projection-item hover-pulse">
+                                <div class="projection-value">€127K</div>
+                                <div class="projection-label">ARR Año 1</div>
+                                <div class="projection-detail">1,000 usuarios de pago</div>
+                            </div>
+                            <div class="projection-arrow">→</div>
+                            <div class="projection-item hover-pulse">
+                                <div class="projection-value">€6.4M</div>
+                                <div class="projection-label">ARR Año 5</div>
+                                <div class="projection-detail">10,000 usuarios de pago</div>
+                            </div>
+                        </div>
+                        <div class="projection-details">
+                            <div class="detail-item hover-lift">
+                                <strong>Break-even:</strong> Mes 6 (€50K MRR)
+                            </div>
+                            <div class="detail-item hover-lift">
+                                <strong>Objetivo 18 meses:</strong> €500K ARR
+                            </div>
+                            <div class="detail-item hover-lift">
+                                <strong>Distribución planes:</strong> 20% Starter, 60% Pro, 20% Enterprise
+                            </div>
+                            <div class="detail-item hover-lift">
+                                <strong>Churn rate:</strong> 8% año 1 → 4% año 5
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 12: Mercado Español SaaS -->
+            <div class="slide" data-slide="12">
+                <div class="slide-content">
+                    <div class="slide-logo">
+                        <div class="logo-small">VM</div>
+                    </div>
+                    <h2 class="slide-title">Mercado Español SaaS</h2>
+                    <div class="market-analysis">
+                        <div class="market-size hover-pulse">
+                            <div class="market-value">€8.16B</div>
+                            <div class="market-label">Tamaño mercado SaaS España 2024</div>
+                        </div>
+                        <div class="market-stats-grid">
+                            <div class="market-stat hover-scale">
+                                <div class="stat-number">19%</div>
+                                <div class="stat-label">CAGR proyectado hasta 2029</div>
+                            </div>
+                            <div class="market-stat hover-scale">
+                                <div class="stat-number">€1.9B</div>
+                                <div class="stat-label">Inversión VC España 2025</div>
+                            </div>
+                            <div class="market-stat hover-scale">
+                                <div class="stat-number">70%</div>
+                                <div class="stat-label">Gap digitalización PYMEs</div>
+                            </div>
+                        </div>
+                        <div class="market-opportunity-detail hover-glow">
+                            <h3>Oportunidad de Digitalización</h3>
+                            <p>España está experimentando una aceleración digital post-COVID. Las PYMEs buscan soluciones SaaS asequibles y específicas para su mercado. Nuestro timing es perfecto para capturar esta demanda creciente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 13: Roadmap Detallado -->
+            <div class="slide" data-slide="13">
+                <div class="slide-content">
+                    <div class="slide-logo">
+                        <div class="logo-small">VM</div>
+                    </div>
+                    <h2 class="slide-title">Roadmap Detallado</h2>
+                    <div class="roadmap">
+                        <div class="roadmap-item hover-lift">
+                            <div class="roadmap-date">Q3 2025</div>
+                            <div class="roadmap-content">
+                                <h3>MVP Launch</h3>
+                                <p><strong>Septiembre:</strong> Lanzamiento beta, 100 usuarios early adopters, validación product-market fit</p>
+                            </div>
+                        </div>
+                        <div class="roadmap-item hover-lift">
+                            <div class="roadmap-date">Q4 2025</div>
+                            <div class="roadmap-content">
+                                <h3>Scale Marketing</h3>
+                                <p><strong>Octubre-Diciembre:</strong> 50 usuarios/mes, partnerships estratégicos, break-even mes 6</p>
+                            </div>
+                        </div>
+                        <div class="roadmap-item hover-lift">
+                            <div class="roadmap-date">2026</div>
+                            <div class="roadmap-content">
+                                <h3>Expansión Funcionalidades</h3>
+                                <p><strong>€500K ARR:</strong> CRM integrado, analytics avanzados, integraciones adicionales</p>
+                            </div>
+                        </div>
+                        <div class="roadmap-item hover-lift">
+                            <div class="roadmap-date">2027-2030</div>
+                            <div class="roadmap-content">
+                                <h3>Expansión Internacional</h3>
+                                <p><strong>€6.4M ARR:</strong> Portugal, Italia, Francia - mercados similares con necesidades parecidas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 14: Análisis de Riesgos -->
+            <div class="slide" data-slide="14">
+                <div class="slide-content">
+                    <div class="slide-logo">
+                        <div class="logo-small">VM</div>
+                    </div>
+                    <h2 class="slide-title">Análisis de Riesgos</h2>
+                    <div class="risks-grid">
+                        <div class="risk-item hover-lift">
+                            <h3>⚠️ Riesgo Técnico</h3>
+                            <div class="risk-content">
+                                <p><strong>Riesgo:</strong> Complejidad integración APIs, escalabilidad IA</p>
+                                <p><strong>Mitigación:</strong> Stack probado, desarrollo iterativo, testing continuo, partnerships con proveedores IA</p>
+                            </div>
+                        </div>
+                        <div class="risk-item hover-lift">
+                            <h3>💰 Riesgo de Mercado</h3>
+                            <div class="risk-content">
+                                <p><strong>Riesgo:</strong> Adopción lenta, competencia de grandes players</p>
+                                <p><strong>Mitigación:</strong> Validación beta intensiva, pricing disruptivo, foco mercado español</p>
+                            </div>
+                        </div>
+                        <div class="risk-item hover-lift">
+                            <h3>🏢 Riesgo Competitivo</h3>
+                            <div class="risk-content">
+                                <p><strong>Riesgo:</strong> HubSpot/Mailchimp lanzan producto similar</p>
+                                <p><strong>Mitigación:</strong> Diferenciación IA española, partnerships locales, first-mover advantage</p>
+                            </div>
+                        </div>
+                        <div class="risk-item hover-lift">
+                            <h3>📊 Riesgo Financiero</h3>
+                            <div class="risk-content">
+                                <p><strong>Riesgo:</strong> Burn rate alto, CAC superior a proyecciones</p>
+                                <p><strong>Mitigación:</strong> Métricas tracking semanal, pivot rápido, reserva 6 meses operaciones</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 15: Estrategia Marketing Digital -->
+            <div class="slide" data-slide="15">
+                <div class="slide-content">
+                    <div class="slide-logo">
+                        <div class="logo-small">VM</div>
+                    </div>
+                    <h2 class="slide-title">Estrategia Marketing Digital</h2>
+                    <div class="marketing-channels">
+                        <div class="channel-item hover-lift">
+                            <h3>📱 LinkedIn Ads</h3>
+                            <div class="channel-metrics">
+                                <div class="metric">CAC objetivo: €180</div>
+                                <div class="metric">CTR esperado: 2.5%</div>
+                                <div class="metric">Conversión: 8%</div>
+                            </div>
+                        </div>
+                        <div class="channel-item hover-lift">
+                            <h3>📝 Content Marketing</h3>
+                            <div class="channel-metrics">
+                                <div class="metric">Blog: 3 posts/semana</div>
+                                <div class="metric">Webinars: 1 semanal</div>
+                                <div class="metric">Objetivo: 5K visitas/mes</div>
+                            </div>
+                        </div>
+                        <div class="channel-item hover-lift">
+                            <h3>🤝 Partnerships</h3>
+                            <div class="channel-metrics">
+                                <div class="metric">ATA: 20% referrals</div>
+                                <div class="metric">Asesores: 15% comisión</div>
+                                <div class="metric">CAC efectivo: €120</div>
+                            </div>
+                        </div>
+                        <div class="channel-item hover-lift">
+                            <h3>👥 Referrals</h3>
+                            <div class="channel-metrics">
+                                <div class="metric">Programa: 1 mes gratis</div>
+                                <div class="metric">NPS objetivo: >50</div>
+                                <div class="metric">30% nuevos usuarios via referrals</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 16: Traction y Validación -->
+            <div class="slide" data-slide="16">
+                <div class="slide-content">
+                    <div class="slide-logo">
+                        <div class="logo-small">VM</div>
+                    </div>
+                    <h2 class="slide-title">Traction y Validación</h2>
+                    <div class="traction-section">
+                        <div class="traction-stats">
+                            <div class="traction-stat hover-pulse">
+                                <div class="stat-number">150+</div>
+                                <div class="stat-label">Usuarios beta registrados</div>
+                            </div>
+                            <div class="traction-stat hover-pulse">
+                                <div class="stat-number">85%</div>
+                                <div class="stat-label">Satisfacción beta users</div>
+                            </div>
+                            <div class="traction-stat hover-pulse">
+                                <div class="stat-number">4.6/5</div>
+                                <div class="stat-label">Rating promedio</div>
+                            </div>
+                        </div>
+                        <div class="testimonials">
+                            <div class="testimonial-card hover-lift">
+                                <p>"VibeMarket me ahorra 15 horas semanales de marketing. Mi facturación ha crecido 40% en 3 meses."</p>
+                                <div class="testimonial-author">- María García, Consultora Fiscal</div>
+                            </div>
+                            <div class="testimonial-card hover-lift">
+                                <p>"Por fin una herramienta que entiende mi negocio español. La IA genera contenido perfecto para mis clientes."</p>
+                                <div class="testimonial-author">- Carlos Ruiz, Asesor Inmobiliario</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 17: Equipo y Talento -->
+            <div class="slide" data-slide="17">
+                <div class="slide-content">
+                    <div class="slide-logo">
+                        <div class="logo-small">VM</div>
+                    </div>
+                    <h2 class="slide-title">Equipo y Talento</h2>
+                    <div class="team-section">
+                        <div class="team-approach hover-glow">
+                            <h3>Filosofía: Equipo Lean & Automatización</h3>
+                            <p>Maximizar eficiencia con tecnología y partnerships estratégicos</p>
+                        </div>
+                        <div class="team-roles">
+                            <div class="role hover-lift">
+                                <h4>🚀 Founder/CEO</h4>
+                                <p><strong>Perfil:</strong> Ex-consultor marketing digital con 8+ años experiencia PYMEs</p>
+                                <p><strong>Responsabilidades:</strong> Visión estratégica, partnerships, fundraising</p>
+                            </div>
+                            <div class="role hover-lift">
+                                <h4>💻 CTO</h4>
+                                <p><strong>Perfil:</strong> Senior engineer con experiencia SaaS y IA</p>
+                                <p><strong>Responsabilidades:</strong> Arquitectura técnica, desarrollo, escalabilidad</p>
+                            </div>
+                            <div class="role hover-lift">
+                                <h4>🎯 Head of Growth</h4>
+                                <p><strong>Perfil:</strong> Growth hacker con track record en SaaS B2B</p>
+                                <p><strong>Responsabilidades:</strong> Adquisición usuarios, optimización funnel</p>
+                            </div>
+                        </div>
+                        <div class="partnerships hover-lift">
+                            <h3>Partners Estratégicos</h3>
+                            <p><strong>Desarrollo:</strong> Freelancers especializados + agencia desarrollo<br>
+                            <strong>Marketing:</strong> ATA, Cámaras Comercio, red asesores fiscales<br>
+                            <strong>Advisors:</strong> Ex-founders SaaS, expertos IA, mentores sector</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 18: Solicitud de Financiación -->
+            <div class="slide" data-slide="18">
+                <div class="slide-content">
+                    <div class="slide-logo">
+                        <div class="logo-small">VM</div>
+                    </div>
+                    <h2 class="slide-title">Solicitud de Financiación</h2>
+                    <div class="funding-request">
+                        <div class="funding-amount hover-pulse">
+                            <h3>€50,000</h3>
+                            <p>Ronda Pre-Seed</p>
+                            <div class="funding-timeline">
+                                <small>Timeline: Q3 2025</small>
+                            </div>
+                        </div>
+                        <div class="funding-breakdown hover-lift">
+                            <h3>Distribución de Fondos</h3>
+                            <div class="funding-chart">
+                                <div class="funding-item">
+                                    <div class="funding-category">Marketing & Adquisición</div>
+                                    <div class="funding-bar">
+                                        <div class="funding-fill" style="width: 30%"></div>
+                                    </div>
+                                    <div class="funding-details">
+                                        <span class="funding-percentage">30%</span>
+                                        <span class="funding-amount-small">€15,000</span>
+                                    </div>
+                                </div>
+                                <div class="funding-item">
+                                    <div class="funding-category">Desarrollo & Tecnología</div>
+                                    <div class="funding-bar">
+                                        <div class="funding-fill" style="width: 50%"></div>
+                                    </div>
+                                    <div class="funding-details">
+                                        <span class="funding-percentage">50%</span>
+                                        <span class="funding-amount-small">€25,000</span>
+                                    </div>
+                                </div>
+                                <div class="funding-item">
+                                    <div class="funding-category">Operaciones & Legal</div>
+                                    <div class="funding-bar">
+                                        <div class="funding-fill" style="width: 20%"></div>
+                                    </div>
+                                    <div class="funding-details">
+                                        <span class="funding-percentage">20%</span>
+                                        <span class="funding-amount-small">€10,000</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="funding-milestones hover-glow">
+                        <h3>Milestones con esta inversión</h3>
+                        <div class="milestone-list">
+                            <div class="milestone-item">✅ MVP completo y funcional</div>
+                            <div class="milestone-item">✅ 100 usuarios beta validados</div>
+                            <div class="milestone-item">✅ Primeros €10K MRR</div>
+                            <div class="milestone-item">✅ Preparación Serie A</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 19: Próximos Pasos -->
+            <div class="slide" data-slide="19">
+                <div class="slide-content">
+                    <div class="slide-logo">
+                        <div class="logo-small">VM</div>
+                    </div>
+                    <h2 class="slide-title">Próximos Pasos - 90 Días</h2>
+                    <div class="next-steps">
+                        <div class="steps-timeline">
+                            <div class="step-item hover-lift">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h3>Días 1-30: Fundraising</h3>
+                                    <ul>
+                                        <li>Cerrar ronda pre-seed €50K</li>
+                                        <li>Finalizar equipo técnico</li>
+                                        <li>Validar MVP con 10 usuarios</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="step-item hover-lift">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h3>Días 31-60: Desarrollo</h3>
+                                    <ul>
+                                        <li>Desarrollo sprint MVP</li>
+                                        <li>Integración APIs principales</li>
+                                        <li>Testing beta con 25 usuarios</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="step-item hover-lift">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h3>Días 61-90: Lanzamiento</h3>
+                                    <ul>
+                                        <li>Beta pública: 100 usuarios</li>
+                                        <li>Primeras métricas traction</li>
+                                        <li>Preparación marketing launch</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="success-metrics hover-glow">
+                            <h3>Métricas de Éxito 90 días</h3>
+                            <div class="metrics-list">
+                                <div class="metric-target">📊 100 usuarios beta activos</div>
+                                <div class="metric-target">💰 €5K MRR milestone</div>
+                                <div class="metric-target">⭐ NPS > 40</div>
+                                <div class="metric-target">🚀 Ready for Scale</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 20: Contacto/Q&A -->
+            <div class="slide" data-slide="20">
+                <div class="slide-content final-slide">
+                    <div class="final-content">
+                        <h2 class="final-title">¿Preguntas?</h2>
+                        <div class="contact-info hover-glow">
+                            <h3>Contacto</h3>
+                            <p>📧 hola@vibemarket.es</p>
+                            <p>🌐 www.vibemarket.es</p>
+                            <p>📱 +34 XXX XXX XXX</p>
+                            <p>💼 LinkedIn: /company/vibemarket</p>
+                        </div>
+                        <div class="cta hover-pulse">
+                            <h3>¡Únete a la revolución del marketing automatizado!</h3>
+                            <p>Transformemos juntos el marketing digital para PYMEs y autónomos españoles</p>
+                            <div class="cta-buttons">
+                                <button class="cta-button primary-cta">Invertir en VibeMarket</button>
+                                <button class="cta-button secondary-cta">Demo en Vivo</button>
+                            </div>
+                        </div>
+                        <div class="final-stats">
+                            <div class="final-stat hover-scale">
+                                <div class="stat-value">3.38M</div>
+                                <div class="stat-label">Mercado objetivo</div>
+                            </div>
+                            <div class="final-stat hover-scale">
+                                <div class="stat-value">€6.4M</div>
+                                <div class="stat-label">ARR objetivo 5 años</div>
+                            </div>
+                            <div class="final-stat hover-scale">
+                                <div class="stat-value">35x</div>
+                                <div class="stat-label">LTV/CAC ratio</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Slide Navigation Menu -->
+        <nav class="slide-nav" id="slideNav">
+            <div class="nav-item active" data-slide="1">Portada</div>
+            <div class="nav-item" data-slide="2">Resumen</div>
+            <div class="nav-item" data-slide="3">Problema</div>
+            <div class="nav-item" data-slide="4">Oportunidad</div>
+            <div class="nav-item" data-slide="5">Solución</div>
+            <div class="nav-item" data-slide="6">Competencia</div>
+            <div class="nav-item" data-slide="7">Tecnología</div>
+            <div class="nav-item" data-slide="8">Pre-Launch</div>
+            <div class="nav-item" data-slide="9">Modelo Negocio</div>
+            <div class="nav-item" data-slide="10">Métricas SaaS</div>
+            <div class="nav-item" data-slide="11">Financieras</div>
+            <div class="nav-item" data-slide="12">Mercado SaaS</div>
+            <div class="nav-item" data-slide="13">Roadmap</div>
+            <div class="nav-item" data-slide="14">Riesgos</div>
+            <div class="nav-item" data-slide="15">Marketing</div>
+            <div class="nav-item" data-slide="16">Traction</div>
+            <div class="nav-item" data-slide="17">Equipo</div>
+            <div class="nav-item" data-slide="18">Financiación</div>
+            <div class="nav-item" data-slide="19">Próximos Pasos</div>
+            <div class="nav-item" data-slide="20">Contacto</div>
+        </nav>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
